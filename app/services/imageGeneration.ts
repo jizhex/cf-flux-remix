@@ -72,7 +72,7 @@ export class ImageGenerationService {
   }
 
   private async generateFluxImage(model: string, prompt: string, numSteps: number): Promise<string> {
-    const jsonBody = { prompt, num_steps: numSteps };
+    const jsonBody = { prompt, guidance: 7.5, strength: 1, width, height };
     const response = await this.postRequest(model, jsonBody);
     const jsonResponse = await response.json();
     if (!jsonResponse.result || !jsonResponse.result.image) {
