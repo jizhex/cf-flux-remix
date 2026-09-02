@@ -21,7 +21,7 @@ CF_ACCOUNT_LIST = '''[{
 }]'''
 API_KEY = "your_api_key_here"
 CF_TRANSLATE_MODEL = "@cf/qwen/qwen1.5-14b-chat-awq"
-CF_IS_TRANSLATE = "true"
+CF_IS_TRANSLATE = "false"
 USE_EXTERNAL_API = "false"
 EXTERNAL_API = ""
 EXTERNAL_MODEL = ""
