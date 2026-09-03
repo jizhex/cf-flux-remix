@@ -15,22 +15,13 @@ assets = { directory = "./build/client" }
 enabled = true
 
 [vars]
-CF_ACCOUNT_LIST = '''[{
-    "account_id":"你的CloudFlare帐户ID",
-    "token":"有Workers AI权限的API令牌"
-}]'''
-API_KEY = "your_api_key_here"
-CF_TRANSLATE_MODEL = "@cf/qwen/qwen1.5-14b-chat-awq"
+API_KEY = "159875321a"
+CF_ACCOUNT_LIST = '[{"account_id":"cb3c5ec01b374291da3a14a46b7523e9","token":"cfat_IfsnF7FcParRrRdMt2JLE4y6eBTnKNMh6nv5xdXra62fe1zc"}]'
 CF_IS_TRANSLATE = "false"
+CF_TRANSLATE_MODEL = "@cf/qwen/qwen1.5-14b-chat-awq"
 USE_EXTERNAL_API = "false"
 EXTERNAL_API = ""
 EXTERNAL_MODEL = ""
 EXTERNAL_API_KEY = ""
 FLUX_NUM_STEPS = "6"
-CUSTOMER_MODEL_MAP = '''{
-    "FLUX.1-Schnell-CF":"@cf/black-forest-labs/flux-1-schnell",
-    "DS-8-CF":"@cf/lykon/dreamshaper-8-lcm",
-    "SD-XL-Bash-CF":"@cf/stabilityai/stable-diffusion-xl-base-1.0",
-    "SD-XL-Lightning-CF":"@cf/bytedance/stable-diffusion-xl-lightning"
-}'''
-getme = "测试专用"
+CUSTOMER_MODEL_MAP = '{"FLUX.1-Schnell-CF":"@cf/black-forest-labs/flux-1-schnell","DS-8-CF":"@cf/lykon/dreamshaper-8-lcm","SD-XL-Bash-CF":"@cf/stabilityai/stable-diffusion-xl-base-1.0","SD-XL-Lightning-CF":"@cf/bytedance/stable-diffusion-xl-lightning"}'
