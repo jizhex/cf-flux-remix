@@ -65,7 +65,7 @@ export class ImageGenerationService {
 
   private async generateStandardImage(model: string, prompt: string, size: string, numSteps: number): Promise<string> {
     const [width, height] = size.split('x').map(Number);
-    const jsonBody = { prompt, guidance: 7.5, strength: 1, width, height };
+    const jsonBody = { prompt };
     const response = await this.postRequest(model, jsonBody);
     const imageBuffer = await response.arrayBuffer();
     return this.arrayBufferToBase64(imageBuffer);
