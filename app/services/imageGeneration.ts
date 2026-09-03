@@ -119,8 +119,6 @@ export class ImageGenerationService {
   }
 
   async testCfAiConnection(): Promise<void> {
-    const testModel = this.config.CF_TRANSLATE_MODEL;
-    const testPrompt = "Hello, world!";
-    await this.postRequest(testModel, { messages: [{ role: "user", content: testPrompt }] });
-  }
-}
+  // 跳过测试，避免调用已弃用的模型
+  return;
+} 
