@@ -26,9 +26,9 @@ export class ImageGenerationService {
     };
   }
 
-  private async translatePrompt(prompt: string): Promise<string> {
-      
-      return prompt;
+ private async translatePrompt(prompt: string): Promise<string> {
+  // 强制关闭翻译，直接返回原始提示词
+  return prompt;
     }
 
     try {
