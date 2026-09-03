@@ -27,7 +27,6 @@ export class ImageGenerationService {
   }
 
   private async translatePrompt(prompt: string): Promise<string> {
-    if (!this.config.CF_IS_TRANSLATE) {
       return prompt;
     }
 
