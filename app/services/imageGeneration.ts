@@ -27,6 +27,7 @@ export class ImageGenerationService {
   }
 
   private async translatePrompt(prompt: string): Promise<string> {
+      
       return prompt;
     }
 
